@@ -10,13 +10,13 @@ pub struct Http<'a> {
 impl<'a> Http<'a> {
     pub fn create_subcommand<'b>() -> App<'a, 'b> {
         SubCommand::with_name("http")
-            .about("Creates a new HTTP triggered Azure Function.")
+            .about("Creates a new HTTP triggered Azure Functionabc.")
             .arg(
                 Arg::with_name("name")
-                    .long("name")
-                    .short("n")
-                    .value_name("NAME")
-                    .help("The name of the new Azure Function.")
+                    // .long("name")
+                    // .short("n")
+                    // .value_name("NAME")
+                    .help("The name of the new Azure Functionn.")
                     .required(true),
             )
             .arg(
